@@ -1,0 +1,43 @@
+/* 1. This tells your app to load all the Tailwind CSS utility classes */
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
+
+.font-serif-hero {
+  font-family: 'Playfair Display', serif;
+}
+/* Ye custom class hum dono layers mein use karenge */
+.font-tech {
+  font-family: 'Space Grotesk',Orbitron, Arial, Helvetica, sans-serif;
+ 
+}
+
+
+.font-custom {
+  font-family: 'Inter', sans-serif;
+}
+/* ==========================================
+   2. CUSTOM ANIMATIONS
+   ========================================== */
+
+/* 🌊 THE WAVE ANIMATION LOGIC */
+/* We make the container 200% wide so it can slide seamlessly without running out of space */
+.wave-container {
+  width: 200%; 
+  display: flex;
+}
+
+/* This keyframe physically pushes the container to the left */
+@keyframes wave-slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Creates a faint hot pink grid pattern */
+.bg-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 20, 147, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 20, 147, 0.08) 1px, transparent 1px);
+}
